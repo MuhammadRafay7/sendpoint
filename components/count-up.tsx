@@ -18,13 +18,15 @@ export function CountUp({
   const ref = useRef<HTMLSpanElement>(null);
   const inView = useInView(ref, { once: true, margin: "-60px" });
 
-  const match = value.match(/^([\d,.]+)(.*)$/);
-  const target = match ? parseFloat(match[1].replace(/,/g, "")) : 0;
-  const suffix = match ? match[2] : value;
+  const match = value.match(/^(\D*)([\d,.]+)(.*)$/);
+  const prefix = match ? match[1] : "";
+  const target = match ? parseFloat(match[2].replace(/,/g, "")) : 0;
+  const suffix = match ? match[3] : value;
   const decimals =
-    match && match[1].includes(".") ? match[1].split(".")[1].length : 0;
+    match && match[2].includes(".") ? match[2].split(".")[1].length : 0;
 
   const format = (n: number) =>
+    prefix +
     n.toLocaleString("en-US", {
       minimumFractionDigits: decimals,
       maximumFractionDigits: decimals,

@@ -7,6 +7,7 @@ import { HowItWorks } from "@/components/how-it-works";
 import { Showcase } from "@/components/showcase";
 import { TemplateGallery } from "@/components/template-gallery";
 import { CopySamples } from "@/components/copy-samples";
+import { Results } from "@/components/results";
 import { Testimonials } from "@/components/testimonials";
 import { CtaBanner } from "@/components/cta-banner";
 import { Footer } from "@/components/footer";
@@ -24,6 +25,7 @@ export default function HomePage() {
         <Showcase />
         <TemplateGallery />
         <CopySamples />
+        <Results />
         <Testimonials />
         <CtaBanner />
       </main>

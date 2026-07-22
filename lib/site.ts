@@ -274,14 +274,6 @@ export type Template = {
 /** Real campaigns designed and shipped for client brands. */
 export const templates: Template[] = [
   {
-    image: "/images/templates/premium-bf.webp",
-    width: 760,
-    height: 1351,
-    brand: "Premium Supplements",
-    category: "Supplements · Black Friday",
-    alt: "Premium Supplements Black Friday 50% off storewide promotional email design",
-  },
-  {
     image: "/images/templates/cupid-lips-oil.webp",
     width: 760,
     height: 3012,

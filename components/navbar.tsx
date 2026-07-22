@@ -68,11 +68,8 @@ export function Navbar() {
 
         {/* Desktop CTA */}
         <div className="hidden items-center gap-3 md:flex">
-          <Button asChild variant="ghost" size="sm">
-            <Link href="#contact">Sign in</Link>
-          </Button>
           <Button asChild size="sm">
-            <Link href="#cta">Start free</Link>
+            <Link href="#contact">Get in touch</Link>
           </Button>
         </div>
 
@@ -107,15 +104,10 @@ export function Navbar() {
               </Link>
             </li>
           ))}
-          <li className="mt-2 flex gap-3 px-1">
-            <Button asChild variant="secondary" className="flex-1">
+          <li className="mt-2 px-1">
+            <Button asChild className="w-full">
               <Link href="#contact" onClick={() => setOpen(false)}>
-                Sign in
-              </Link>
-            </Button>
-            <Button asChild className="flex-1">
-              <Link href="#cta" onClick={() => setOpen(false)}>
-                Start free
+                Get in touch
               </Link>
             </Button>
           </li>

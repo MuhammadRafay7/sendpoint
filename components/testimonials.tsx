@@ -35,7 +35,7 @@ export function Testimonials() {
         <div className="mt-14 grid gap-6 md:grid-cols-2">
           {testimonials.map((t, i) => (
             <Reveal key={t.name} delay={i % 2}>
-              <figure className="relative flex h-full flex-col rounded-3xl border border-ink-100 bg-white p-8 shadow-soft transition-shadow hover:shadow-card">
+              <figure className="group relative flex h-full flex-col rounded-3xl border border-ink-100 bg-white p-8 shadow-soft transition-all duration-300 hover:-translate-y-1 hover:border-brand-200 hover:shadow-card">
                 <Quote
                   aria-hidden
                   className="absolute right-7 top-7 size-8 text-brand-100"

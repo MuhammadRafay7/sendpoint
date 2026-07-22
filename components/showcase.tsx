@@ -26,26 +26,28 @@ export function Showcase() {
           {/* Gallery */}
           <Reveal>
             <div className="relative flex gap-4">
-              <div className="flex-1 overflow-hidden rounded-2xl border border-ink-100 bg-white shadow-card">
+              <div className="group relative h-[440px] flex-1 overflow-hidden rounded-2xl border border-ink-100 bg-white shadow-card">
                 <Image
-                  src="/images/email-templates.png"
-                  alt="Grid of responsive SendPoint email campaign designs"
-                  width={1306}
-                  height={1376}
+                  src="/images/showcase-velora-full.webp"
+                  alt="Responsive real-estate email design for a Velora property launch"
+                  width={760}
+                  height={1956}
+                  quality={90}
                   loading="lazy"
-                  sizes="(max-width: 1024px) 60vw, 380px"
-                  className="h-full w-full object-cover"
+                  sizes="(max-width: 640px) 95vw, (max-width: 1024px) 45vw, 340px"
+                  className="w-full transition-transform [transition-duration:6000ms] ease-linear will-change-transform group-hover:-translate-y-[calc(100%_-_440px)]"
                 />
               </div>
-              <div className="hidden w-40 shrink-0 overflow-hidden rounded-2xl border border-ink-100 bg-white shadow-card sm:block">
+              <div className="group relative hidden h-[440px] w-40 shrink-0 overflow-hidden rounded-2xl border border-ink-100 bg-white shadow-card sm:block">
                 <Image
                   src="/images/email-showcase-1.png"
                   alt="A single long-form SendPoint product email design"
                   width={290}
                   height={1486}
+                  quality={92}
                   loading="lazy"
-                  sizes="160px"
-                  className="h-full w-full object-cover object-top"
+                  sizes="220px"
+                  className="w-full transition-transform [transition-duration:6000ms] ease-linear will-change-transform group-hover:-translate-y-[calc(100%_-_440px)]"
                 />
               </div>
               <div className="pointer-events-none absolute -bottom-4 -right-4 -z-10 h-40 w-40 rounded-full bg-brand-300/30 blur-3xl" />

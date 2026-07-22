@@ -36,7 +36,7 @@ export function Hero() {
                 <Star key={i} className="size-3.5 fill-current" />
               ))}
             </span>
-            Trusted by 12,000+ growing brands
+            Trusted by growing DTC &amp; real-estate brands
           </motion.div>
 
           <motion.h1
@@ -132,17 +132,27 @@ export function Hero() {
             initial={{ opacity: 0, scale: 0.9, y: 10 }}
             animate={{ opacity: 1, scale: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.6 }}
-            className="absolute -bottom-6 -left-4 hidden items-center gap-3 rounded-2xl border border-ink-100 bg-white/90 p-4 shadow-card backdrop-blur sm:flex md:-left-10"
+            className="absolute -bottom-6 -left-4 hidden sm:block md:-left-10"
           >
-            <span className="flex size-11 items-center justify-center rounded-xl bg-brand-600 text-white shadow-glow">
-              <TrendingUp className="size-5" />
-            </span>
-            <div className="text-left">
-              <p className="text-lg font-bold leading-none text-ink-900">
-                +38%
-              </p>
-              <p className="mt-1 text-xs text-ink-500">Automated revenue</p>
-            </div>
+            <motion.div
+              animate={{ y: [0, -7, 0] }}
+              transition={{
+                duration: 4.5,
+                repeat: Infinity,
+                ease: "easeInOut",
+              }}
+              className="flex items-center gap-3 rounded-2xl border border-ink-100 bg-white/90 p-4 shadow-card backdrop-blur"
+            >
+              <span className="flex size-11 items-center justify-center rounded-xl bg-brand-600 text-white shadow-glow">
+                <TrendingUp className="size-5" />
+              </span>
+              <div className="text-left">
+                <p className="text-lg font-bold leading-none text-ink-900">
+                  +35%
+                </p>
+                <p className="mt-1 text-xs text-ink-500">Email revenue</p>
+              </div>
+            </motion.div>
           </motion.div>
 
           {/* Floating deliverability badge */}
@@ -150,12 +160,23 @@ export function Hero() {
             initial={{ opacity: 0, scale: 0.9, y: 10 }}
             animate={{ opacity: 1, scale: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.75 }}
-            className="absolute -right-4 -top-5 hidden rounded-2xl border border-ink-100 bg-white/90 px-4 py-3 shadow-card backdrop-blur sm:block md:-right-10"
+            className="absolute -right-4 -top-5 hidden sm:block md:-right-10"
           >
-            <p className="text-xs font-medium text-ink-500">Inbox placement</p>
-            <p className="mt-1 text-lg font-bold leading-none text-brand-600">
-              99.2%
-            </p>
+            <motion.div
+              animate={{ y: [0, -7, 0] }}
+              transition={{
+                duration: 5,
+                repeat: Infinity,
+                ease: "easeInOut",
+                delay: 0.8,
+              }}
+              className="rounded-2xl border border-ink-100 bg-white/90 px-4 py-3 shadow-card backdrop-blur"
+            >
+              <p className="text-xs font-medium text-ink-500">Inbox placement</p>
+              <p className="mt-1 text-lg font-bold leading-none text-brand-600">
+                99%
+              </p>
+            </motion.div>
           </motion.div>
         </motion.div>
       </div>

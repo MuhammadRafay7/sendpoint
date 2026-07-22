@@ -1,9 +1,9 @@
 import Image from "next/image";
 import Link from "next/link";
-import { Twitter, Linkedin, Github, Youtube, Mail } from "lucide-react";
+import { Twitter, Linkedin, Github, Youtube, Mail, ArrowRight } from "lucide-react";
 
 import { siteConfig, footerLinks } from "@/lib/site";
-import { NewsletterForm } from "@/components/newsletter-form";
+import { Button } from "@/components/ui/button";
 
 const socials = [
   { label: "Twitter", href: siteConfig.social.twitter, Icon: Twitter },
@@ -18,7 +18,7 @@ export function Footer() {
     <footer id="contact" className="scroll-mt-24 bg-ink-950 text-ink-200">
       <div className="container py-16 md:py-20">
         <div className="grid gap-12 lg:grid-cols-[1.4fr_1fr_1fr_1fr]">
-          {/* Brand + newsletter */}
+          {/* Brand + contact CTA */}
           <div className="max-w-sm">
             <Link
               href="#top"
@@ -41,10 +41,12 @@ export function Footer() {
             </p>
 
             <div className="mt-6">
-              <p className="text-sm font-semibold text-white">
-                Get email marketing tips in your inbox
-              </p>
-              <NewsletterForm />
+              <Button asChild>
+                <Link href="#contact">
+                  Get in touch
+                  <ArrowRight className="size-4" />
+                </Link>
+              </Button>
             </div>
           </div>
 

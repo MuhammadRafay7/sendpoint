@@ -13,8 +13,8 @@ export const siteConfig = {
   tagline: "Email marketing that actually converts",
   description:
     "SendPoint is the email marketing and automation platform that helps modern brands grow revenue with smart segmentation, high-converting automations, and deliverability you can trust.",
-  email: "hello@sendpoint.io",
-  url: "https://sendpoint.io",
+  email: "info@sendpointco.com",
+  url: "https://sendpoint.com",
   social: {
     twitter: "https://twitter.com",
     linkedin: "https://linkedin.com",
@@ -256,8 +256,8 @@ export const footerLinks = {
   ],
   Resources: [
     { label: "Email Templates", href: "#work" },
-    { label: "Book a Demo", href: `mailto:${"hello@sendpoint.io"}?subject=Book%20a%20SendPoint%20demo` },
-    { label: "Talk to Sales", href: `mailto:${"hello@sendpoint.io"}?subject=Talk%20to%20SendPoint%20sales` },
+    { label: "Book a Demo", href: `mailto:${"info@sendpointco.com"}?subject=Book%20a%20SendPoint%20demo` },
+    { label: "Talk to Sales", href: `mailto:${"info@sendpointco.com"}?subject=Talk%20to%20SendPoint%20sales` },
     { label: "Contact", href: "#contact" },
   ],
 };

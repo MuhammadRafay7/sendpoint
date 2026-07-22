@@ -54,7 +54,7 @@ export function HowItWorks() {
                     alt={step.imageAlt}
                     width={1200}
                     height={760}
-                    url="app.sendpoint.io"
+                    url="app.sendpoint.com"
                   />
                 </Reveal>
               </div>

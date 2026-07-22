@@ -124,7 +124,7 @@ export function Hero() {
             width={1697}
             height={868}
             priority
-            url="app.sendpoint.io/reports/deliverability"
+            url="app.sendpoint.com/reports/deliverability"
           />
 
           {/* Floating stat card */}

@@ -22,7 +22,7 @@ export function BrowserFrame({
   height,
   priority = false,
   className,
-  url = "app.sendpoint.io",
+  url = "app.sendpoint.com",
 }: BrowserFrameProps) {
   return (
     <div
